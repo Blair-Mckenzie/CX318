@@ -8,10 +8,39 @@
     <title>Bluetooth Synthesizer</title>
 </head>
 <body>
+
 <div id="keyboard">
 
 </div>
 <script src="synthesizer.js"></script>
+<div>
+    <button id="bluetooth">Bluetooth</button>
+<script>
+   let button=document.getElementById('bluetooth');
+    button.addEventListener("click",() => {
+        navigator.bluetooth.requestDevice({
+            filters:[{
+                name: "BMOC"
+            }],
+                optionalServices:['battery_service']
+            })
+            .then(device =>{
+                device.addEventListener('gattserverdisconnected',disconnected);
+                console.log(device.name);
+                return device.gatt.connect();
+            })
+            .then(server => { /* ... */ })
+            .catch(error => {console.log(error);});
+    });
+
+    function disconnected(event){
+        let device = event.target;
+        console.log('Device ' +device.name+' is disconnected')
+    }
+</script>
+</div>
+
+
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 

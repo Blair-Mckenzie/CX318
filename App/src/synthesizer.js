@@ -23,14 +23,14 @@ function createWhiteKeys(){
         keyboard.appendChild(whiteButtons[i]);
         whiteButtons[i].addEventListener("click",() => {
             alert("Something Happened");
-        })
+        });
     }
 }
 function setWhiteKeyProperties() {
-    for(let i=0;whiteButtons.length;i++){
-        whiteButtons[i].innerHTML='WKey'+i;
-        whiteButtons[i].style.width='100px';
-        whiteButtons[i].style.height='200px';
+    for (let i = 0; whiteButtons.length; i++) {
+        whiteButtons[i].innerHTML = 'WKey' + i;
+        whiteButtons[i].style.width = '125px';
+        whiteButtons[i].style.height = '300px';
     }
 }
 
@@ -41,7 +41,7 @@ function createBlackKeys() {
         keyboard.appendChild(blackButtons[i]);
         blackButtons[i].addEventListener("click",() => {
             alert("Something Happened");
-        })
+        });
     }
 }
 
@@ -49,8 +49,8 @@ function setBlackKeyProperties() {
     for(let i=0;i<blackButtons.length;i++){
         blackButtons[i].innerHTML='BKey'+i;
         blackButtons[i].style.color="white";
-        blackButtons[i].style.width='50px';
-        blackButtons[i].style.height='100px';
+        blackButtons[i].style.width='62.5px';
+        blackButtons[i].style.height='150px';
         blackButtons[i].style.backgroundColor='black';
     }
 }
