@@ -1,7 +1,7 @@
 
 let noteFreq = null;
-let whiteButtons=[];
-let blackButtons=[];
+let buttons=[];
+//let blackButtons=[];
 let keyboard = document.getElementById('keyboard');
 
 setup();
@@ -26,11 +26,27 @@ function createWhiteKeys(){
         });
     }
 }
+
+function createKeys(){
+    for(let i=0;i<88;i++){
+        buttons[i]=document.createElement("button");
+        keyboard.appendChild(buttons[i]);
+        buttons[i].addEventListener("click",() => {
+            alert("Something Happened");
+        });
+        buttons[i].innerHTML = 'WKey' + i;
+        buttons[i].style.width = '125px';
+        buttons[i].style.height = '300px';
+    }
+
+}
+
 function setWhiteKeyProperties() {
     for (let i = 0; whiteButtons.length; i++) {
         whiteButtons[i].innerHTML = 'WKey' + i;
         whiteButtons[i].style.width = '125px';
         whiteButtons[i].style.height = '300px';
+        whiteButtons[i].style.position='absolute';
     }
 }
 
@@ -52,42 +68,18 @@ function setBlackKeyProperties() {
         blackButtons[i].style.width='62.5px';
         blackButtons[i].style.height='150px';
         blackButtons[i].style.backgroundColor='black';
+        blackButtons[i].style.borderColor='black';
+        blackButtons[i].style.position='relative';
+        blackButtons[i].style.zIndex="1";
     }
 }
 
 function setup() {
     createNoteTable();
-    createWhiteKeys();
-    createBlackKeys();
-    setBlackKeyProperties();
-    setWhiteKeyProperties();
+    createKeys();
+    // createWhiteKeys();
+    // createBlackKeys();
+    // setBlackKeyProperties();
+    // setWhiteKeyProperties();
 
 }
-
-
-
-
-
-
-
-
-
-// function createKey() {
-//     var Chapter = [0,1,2,3,4,5,6,7,8,9,10];
-//     for(i = 0; i < 11; i++) {
-//         var button = document.createElement("button");
-//         button.innerHTML = Chapter[i];
-//         button.className = "btn btn-outline-success";
-//         var buttonDiv = document.getElementById("buttons");
-//         buttonDiv.appendChild(button);
-//     }
-//     let buttonNum=[];
-//     for(i=0;i<88;i++){
-//         let button = document.createElement("button");
-//         button.innerHTML=buttonNum[i];
-//         button.className="btn btn-outline-success";
-//         let buttonDiv = document.getElementById("buttons");
-//         buttonDiv.appendChild(button);
-//     }
-// }
-//document.body.addEventListener("load",createKey(),false);
