@@ -30,6 +30,7 @@ button.addEventListener("click",() => {
         .catch(error => {console.log(error);});
 });
 
+
 function disconnected(event){
     let device = event.target;
     console.log('Device ' +device.name+' is disconnected')

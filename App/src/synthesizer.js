@@ -13,6 +13,7 @@ for (let i=1;i<89;i++){
     noteFreq[i]=440*Math.pow(2,(i-49)/12);
     console.log(noteFreq[i]);
 }
+
 return noteFreq;
 }
 
