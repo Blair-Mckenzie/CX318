@@ -2,7 +2,7 @@ let button=document.getElementById('bluetooth');
 button.addEventListener("click",() => {
     navigator.bluetooth.requestDevice({
         acceptAllDevices:true,
-        optionalServices:['battery_service']
+        optionalServices:["dd8c1400-3ae2-5c42-b8be-96721cd710fe"]
     })
         .then(device =>{
             device.addEventListener('gattserverdisconnected',disconnected);
@@ -11,19 +11,20 @@ button.addEventListener("click",() => {
         })
         .then(server => {
             console.log('got server');
-            return server.getPrimaryService('battery_service');
+            return server.getPrimaryService("dd8c1400-3ae2-5c42-b8be-96721cd710fe");
          })
          .then(service => {
              console.log('got service');
-             return service.getCharacteristic('battery_level');
+             return service.getCharacteristic("dd8c1401-3ae2-5c42-b8be-96721cd710fe");
          })
          .then(characteristic => { 
              console.log('got characteristic');
-             // characteristic.writeValue...
+             characteristic.writeValue(1);
+             console.log(characteristic.readValue())
             return characteristic.readValue();
          })
          .then(value => {
-             console.log('battery level', value);
+             console.log("dd8c1400-3ae2-5c42-b8be-96721cd710fe", value);
          })
         .catch(error => {console.log(error);});
 });
