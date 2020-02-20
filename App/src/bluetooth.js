@@ -19,8 +19,9 @@ button.addEventListener("click",() => {
          })
          .then(characteristic => { 
              console.log('got characteristic');
-             characteristic.writeValue(1);
-             console.log(characteristic.readValue())
+             var buf = new ArrayBuffer("h");
+             characteristic.writeValue(buf);
+             console.log(characteristic.readValue());
             return characteristic.readValue();
          })
          .then(value => {
