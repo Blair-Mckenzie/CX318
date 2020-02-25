@@ -1,8 +1,14 @@
 # CX318
 
 ## To do list
-* By 10/02/20
-* Meet with mentor
-* Design App
-* Make app and Board Communicate
+* [x] Meet with mentor
+* [x] Design App
+* [x] Bluetooth connection established between Website and Noridc board
+* [ ] Make web app and Board Communicate
+* [ ] Design circuits
+* [ ] Test Circuits
+* [ ] Design PCB 
+* [ ] Finish off web app
+* [ ] Manafacture PCB 
+* [ ] Final Assembly of Project
 
