@@ -41,7 +41,7 @@ function createKeys(){
         buttons[i].style.width = '125px';
         buttons[i].style.height = '300px';
         buttons[i].style.backgroundColor='white';
-        buttons[i+1].style.width = '62px';
+        //buttons[i+1].style.width = '62px';
         buttons[i+1].style.zIndex ='1';
         buttons[i+1].style.backgroundColor='black';
         buttons[i+1].style.height = '150px';
