@@ -1,4 +1,9 @@
+const serviceID="dd8c1400-3ae2-5c42-b8be-96721cd710fe";
+const characteristicID ="dd8c1401-3ae2-5c42-b8be-96721cd710fe";
 let button=document.getElementById('bluetooth');
+let customChar;
+let customChar2;
+
 button.addEventListener("click",() => {
     navigator.bluetooth.requestDevice({
         acceptAllDevices:true,
@@ -11,27 +16,61 @@ button.addEventListener("click",() => {
         })
         .then(server => {
             console.log('got server');
-            return server.getPrimaryService("dd8c1400-3ae2-5c42-b8be-96721cd710fe");
+            return server.getPrimaryService(serviceID);
          })
          .then(service => {
              console.log('got service');
-             return service.getCharacteristic("dd8c1401-3ae2-5c42-b8be-96721cd710fe");
+             return service.getCharacteristic(characteristicID);
          })
-         .then(characteristic => { 
+         .then(characteristic => {
              console.log('got characteristic');
-             var buf = new ArrayBuffer("h");
-             characteristic.writeValue(buf);
-             console.log(characteristic.readValue());
-            return characteristic.readValue();
-         })
-         .then(value => {
-             console.log("dd8c1400-3ae2-5c42-b8be-96721cd710fe", value);
+             customChar = characteristic;
+             customChar2=characteristic;
+             let buf = new Uint32Array(1);
+             buf[0]=352321536;
+             return characteristic.writeValue(buf);
          })
         .catch(error => {console.log(error);});
 });
-
 
 function disconnected(event){
     let device = event.target;
     console.log('Device ' +device.name+' is disconnected')
 }
+
+function sendValue(value) {
+    let buffer = new Uint8Array(1);
+    buffer[0]=value;
+    customChar.writeValue(buffer);
+}
+function readValue(){
+    console.log(customChar.readValue());
+}
+
+function sendValue1(value) {
+    let buffer = new Uint8Array(1);
+    buffer[0]=value;
+    customChar2.writeValue(buffer);
+}
+
+
+//         .then(device => device.gatt.connect())
+//         .then(server => {
+//             // Getting Battery Service...
+//             return server.getPrimaryService('battery_service');
+//         })
+//         .then(service => {
+//             // Getting Battery Level Characteristic...
+//             return service.getCharacteristic('battery_level');
+//         })
+//         .then(characteristic => {
+//             // Reading Battery Level...
+//             return characteristic.readValue();
+//         })
+//         .then(value => {
+//             console.log('Battery percentage is ' + value.getUint8(0));
+//         })
+//         .catch(error => {
+//             console.log(error);
+//         });
+// });

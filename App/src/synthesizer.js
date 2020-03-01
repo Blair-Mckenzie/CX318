@@ -1,7 +1,6 @@
 
 let noteFreq = null;
 let buttons=[];
-//let blackButtons=[];
 let keyboard = document.getElementById('keyboard');
 
 setup();
@@ -13,7 +12,6 @@ for (let i=1;i<89;i++){
     noteFreq[i]=440*Math.pow(2,(i-49)/12);
     console.log(noteFreq[i]);
 }
-
 return noteFreq;
 }
 
@@ -50,26 +48,6 @@ function createKeys(){
 
 }
 
-function setWhiteKeyProperties() {
-    for (let i = 0; whiteButtons.length; i++) {
-        whiteButtons[i].innerHTML = 'WKey' + i;
-        whiteButtons[i].style.width = '125px';
-        whiteButtons[i].style.height = '300px';
-        whiteButtons[i].style.position='absolute';
-    }
-}
-
-//Creates the black key buttons and appends them to the DOM
-function createBlackKeys() {
-    for(let i=0;i<2;i++){
-        blackButtons[i]=document.createElement("button");
-        keyboard.appendChild(blackButtons[i]);
-        blackButtons[i].addEventListener("click",() => {
-            alert("Something Happened");
-        });
-    }
-}
-
 function setBlackKeyProperties() {
     for(let i=0;i<blackButtons.length;i++){
         blackButtons[i].innerHTML='BKey'+i;
@@ -86,9 +64,4 @@ function setBlackKeyProperties() {
 function setup() {
     createNoteTable();
     createKeys();
-    // createWhiteKeys();
-    // createBlackKeys();
-    // setBlackKeyProperties();
-    // setWhiteKeyProperties();
-
 }
