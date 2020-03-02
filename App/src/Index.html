@@ -16,15 +16,15 @@
     </div>
 
         <div id="buttons">
-            <button id="A0" class="butt" onmousedown="sendValue(177)" onmouseup="sendValue(0)"></button>            //A0
-            <button id="B0" class="butt" onmousedown="sendValue(80)" onmouseup="sendValue(0)"></button>            //B0
-            <button id="C1" class="butt" onmousedown="sendValue(160)" onmouseup="sendValue(0)"></button>             //C1
-            <button id="D1" class="butt" onmousedown="sendValue(34)" onmouseup="sendValue(0)"></button>             //D1
-            <button id="E1" class="butt" onmousedown="sendValue(50)" onmouseup="sendValue(0)"></button>             //E1
-            <button id="F1" class="butt" onmousedown="sendValue(66)" onmouseup="sendValue(0)"></button>             //F1
-            <button id="G1" class="butt" onmousedown="sendValue(82)" onmouseup="sendValue(0)"></button>             //G1
-            <button id="A1" class="butt" onmousedown="sendValue(98)" onmouseup="sendValue(0)"></button>             //A1
-            <button id="B1" class="butt" onmousedown="sendValue(114)" onmouseup="sendValue(0)"></button>            //B1
+            <button id="A0" class="butt" value="A4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //A0
+            <button id="B0" class="butt" value="C4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //B0
+            <button id="C1" class="butt" value="15" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //C1
+            <button id="D1" class="butt" value="35" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //D1
+            <button id="E1" class="butt" value="55" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //E1
+            <button id="F1" class="butt" value="65" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //F1
+            <button id="G1" class="butt" value="85" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //G1
+            <button id="A1" class="butt" value="A5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //A1
+            <button id="B1" class="butt" value="C5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //B1
             <button class="butt" onclick="greeting()"></button>
             <button class="butt" onclick="greeting()"></button>
             <button class="butt" onclick="greeting()"></button>
@@ -69,6 +69,7 @@
             </button>
         </div>
     <script src="bluetooth.js"></script>
+    <script src="synthesizer.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
