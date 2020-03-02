@@ -2,8 +2,47 @@
 let noteFreq = null;
 let buttons=[];
 let keyboard = document.getElementById('keyboard');
+let pressedButtons = [];
+let prevValues = []
+let sendTimer = new Date();
 
 setup();
+
+function sendCurrentKeys()
+{
+    let noteData = 0;
+    //console.log(pressedButtons);
+    for(let i = 0; i < Math.min(pressedButtons.length, 4); i++)
+    {
+        let buttonValue = parseInt(pressedButtons[i].value, 16);
+        noteData += buttonValue * Math.pow(256, i);
+    }
+
+    prevValues.push(noteData);
+    if(prevValues.length > 5)
+        prevValues.shift();
+
+    let deltaTime = new Date().getTime() - sendTimer.getTime();
+    let isSame = prevValues.every((val, i, arr) => val === arr[0]);
+    if(!isSame && deltaTime > 150)
+    {
+        sendValue(noteData);
+        sendTimer = new Date();
+    }
+}
+
+function onPress(id)
+{
+    let btn = document.getElementById(id);
+    pressedButtons.push(btn);
+    console.log(pressedButtons);
+}
+
+function onRelease(id)
+{
+    let index = pressedButtons.findIndex(function(btn) { return btn.id === id });
+    pressedButtons.splice(index, 1);
+}
 
 //Assigns the frequency from note 1 to 88
 function createNoteTable() {
@@ -62,6 +101,7 @@ function setBlackKeyProperties() {
 }
 
 function setup() {
-    createNoteTable();
-    createKeys();
+    setInterval(sendCurrentKeys, 50)
+    //createNoteTable();
+    //createKeys();
 }

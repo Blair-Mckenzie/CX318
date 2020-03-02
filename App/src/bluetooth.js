@@ -39,7 +39,7 @@ function disconnected(event){
 }
 
 function sendValue(value) {
-    let buffer = new Uint8Array(1);
+    let buffer = new Uint32Array(1);
     buffer[0]=value;
     customChar.writeValue(buffer);
 }
