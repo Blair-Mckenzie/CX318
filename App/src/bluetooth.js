@@ -25,7 +25,6 @@ button.addEventListener("click",() => {
          .then(characteristic => {
              console.log('got characteristic');
              customChar = characteristic;
-             customChar2=characteristic;
              let buf = new Uint32Array(1);
              buf[0]=352321536;
              return characteristic.writeValue(buf);
@@ -43,13 +42,3 @@ function sendValue(value) {
     buffer[0]=value;
     customChar.writeValue(buffer);
 }
-function readValue(){
-    console.log(customChar.readValue());
-}
-
-function sendValue1(value) {
-    let buffer = new Uint8Array(1);
-    buffer[0]=value;
-    customChar2.writeValue(buffer);
-}
-
