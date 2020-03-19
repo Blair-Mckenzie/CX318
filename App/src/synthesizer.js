@@ -10,7 +10,7 @@ setup();
 function sendCurrentKeys()
 {
     let noteData = 0;
-    //console.log(pressedButtons);
+    console.log(pressedButtons);
     for(let i = 0; i < pressedButtons.length; i++)
     {
         let buttonValue = parseInt(pressedButtons[i].value, 16);

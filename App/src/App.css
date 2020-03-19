@@ -1,0 +1,129 @@
+body, main, html, #buttons {
+    background-color: #7D7B7B;
+    height: 100%
+  }
+
+  
+ 
+#buttons button{
+    font-size: 0;
+    width: 5%;
+    height: 60%;
+    background-color:white;
+    border: none;
+    margin-right: -3.7px;
+  }
+
+  #buttons #butt4{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: -78.1%;
+    position: relative;
+    width: 4%;
+  }
+
+  #buttons #butt5{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: -77.1%;
+    position: relative;
+    width: 4%;
+  }
+
+  #buttons #butt6{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: -71.1%;
+    position: relative;
+    width: 4%;
+  }
+
+  #buttons #butt7{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: -70.1%;
+    position: relative;
+    width: 4%;
+  }
+
+  #buttons #butt8{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 28.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  
+
+  #buttons #butt9{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 34.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  #buttons #butt10{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 35.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  #buttons #butt11{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 41.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  #buttons #butt12{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 42.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  #buttons #butt13{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 43.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+  #buttons #butt14{
+    background-color: black;
+    vertical-align: top;
+    height: 40%;
+    left: 49.4%;
+    position: relative;
+    width: 4%;
+    top: -60.7%;
+  }
+
+
+
+
+ 
+
