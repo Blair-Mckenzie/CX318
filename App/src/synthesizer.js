@@ -10,7 +10,7 @@ setup();
 function sendCurrentKeys()
 {
     let noteData = 0;
-    //console.log(pressedButtons);
+    console.log(pressedButtons);
     for(let i = 0; i < pressedButtons.length; i++)
     {
         let buttonValue = parseInt(pressedButtons[i].value, 16);
@@ -51,45 +51,118 @@ function removeDuplicates(array) {
 };
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == 'KeyA')
-        onPress("A0");
+    if (event.code == 'KeyQ')
+        onPress("C4");
+    if (event.code == 'Digit2')
+        onPress("Db4");
+    if (event.code == 'KeyW')
+        onPress("D4");
+    if (event.code == 'Digit3')
+        onPress("Eb4");
+    if (event.code == 'KeyE')
+        onPress("E4");
+    if (event.code == 'KeyR')
+        onPress("F4");
+    if (event.code == 'Digit5')
+        onPress("Gb4");
+    if (event.code == 'KeyT')
+        onPress("G4");
+    if (event.code == 'Digit6')
+        onPress("Ab4");
+    if (event.code == 'KeyY')
+        onPress("A4");
+    if (event.code == 'Digit7')
+        onPress("Bb4");
+    if (event.code == 'KeyU')
+        onPress("B4");
+    if (event.code == 'KeyZ')
+        onPress("C5");
     if (event.code == 'KeyS')
-        onPress("B0");
+        onPress("Db5");
+    if (event.code == 'KeyX')
+        onPress("D5");
     if (event.code == 'KeyD')
-        onPress("C1");
-    if (event.code == 'KeyF')
-        onPress("D1");
+        onPress("Eb5");
+    if (event.code == 'KeyC')
+        onPress("E5");
+    if (event.code == 'KeyV')
+        onPress("F5");
     if (event.code == 'KeyG')
-        onPress("E1");
+        onPress("Gb5");
+    if (event.code == 'KeyB')
+        onPress("G5");
     if (event.code == 'KeyH')
-        onPress("F1");
+        onPress("Ab5");
+    if (event.code == 'KeyN')
+        onPress("A5");
     if (event.code == 'KeyJ')
-        onPress("G1");
-    if (event.code == 'KeyK')
-        onPress("A1");
+        onPress("Bb5");
+    if (event.code == 'KeyM')
+        onPress("B5");
+    if (event.code == 'Comma')
+        onPress("C6");
     if (event.code == 'KeyL')
-        onPress("B1");
+        onPress("Db6");
+    if (event.code == 'Period')
+        onPress("D6");
 });
 
 document.addEventListener('keyup', function(event) {
-    if (event.code == 'KeyA')
-        onRelease("A0");
+
+    if (event.code == 'KeyQ')
+        onRelease("C4");
+    if (event.code == 'Digit2')
+        onRelease("Db4");
+    if (event.code == 'KeyW')
+        onRelease("D4");
+    if (event.code == 'Digit3')
+        onRelease("Eb4");
+    if (event.code == 'KeyE')
+        onRelease("E4");
+    if (event.code == 'KeyR')
+        onRelease("F4");
+    if (event.code == 'Digit5')
+        onRelease("Gb4");
+    if (event.code == 'KeyT')
+        onRelease("G4");
+    if (event.code == 'Digit6')
+        onRelease("Ab4");
+    if (event.code == 'KeyY')
+        onRelease("A4");
+    if (event.code == 'Digit7')
+        onRelease("Bb4");
+    if (event.code == 'KeyU')
+        onRelease("B4");
+    if (event.code == 'KeyZ')
+        onRelease("C5");
     if (event.code == 'KeyS')
-        onRelease("B0");
+        onRelease("Db5");
+    if (event.code == 'KeyX')
+        onRelease("D5");
     if (event.code == 'KeyD')
-        onRelease("C1");
-    if (event.code == 'KeyF')
-        onRelease("D1");
+        onRelease("Eb5");
+    if (event.code == 'KeyC')
+        onRelease("E5");
+    if (event.code == 'KeyV')
+        onRelease("F5");
     if (event.code == 'KeyG')
-        onRelease("E1");
+        onRelease("Gb5");
+    if (event.code == 'KeyB')
+        onRelease("G5");
     if (event.code == 'KeyH')
-        onRelease("F1");
+        onRelease("Ab5");
+    if (event.code == 'KeyN')
+        onRelease("A5");
     if (event.code == 'KeyJ')
-        onRelease("G1");
-    if (event.code == 'KeyK')
-        onRelease("A1");
+        onRelease("Bb5");
+    if (event.code == 'KeyM')
+        onRelease("B5");
+    if (event.code == 'Comma')
+        onRelease("C6");
     if (event.code == 'KeyL')
-        onRelease("B1");
+        onRelease("Db6");
+    if (event.code == 'Period')
+        onRelease("D6");
 });
 
 

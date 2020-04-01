@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="stylesheet.scss">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="App.css">
         <title>Bluetooth Synthesizer</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
@@ -15,58 +16,36 @@
         <button type="button" class="btn btn-primary" id="bluetooth">Bluetooth Connect</button>
     </div>
 
+    <!-- Still to workout the ids and values of the additional buttons this is just to make the simple layout again -->
+
         <div id="buttons">
-            <button id="A0" class="butt" value="A4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //A0
-            <button id="B0" class="butt" value="C4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //B0
-            <button id="C1" class="butt" value="15" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //C1
-            <button id="D1" class="butt" value="35" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //D1
-            <button id="E1" class="butt" value="55" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //E1
-            <button id="F1" class="butt" value="65" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //F1
-            <button id="G1" class="butt" value="85" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //G1
-            <button id="A1" class="butt" value="A5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>             //A1
-            <button id="B1" class="butt" value="C5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>            //B1
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button class="butt" onclick="greeting()"></button>
-            <button id="butt2" onclick="greeting()">
-            </button>
-            <button id="butt3" onclick="greeting()">
-            </button>
-            <button id="butt4" onclick="greeting()">
-            </button>
-            <button id="butt5" onclick="greeting()">
-            </button>
-            <button id="butt6" onclick="greeting()">
-            </button>
-            <button id="butt7" onclick="greeting()">
-            </button>
-            <button id="butt8" onclick="greeting()">
-            </button>
-            <button id="butt9" onclick="greeting()">
-            </button>
-            <button id="butt10" onclick="greeting()">
-            </button>
-            <button id="butt11" onclick="greeting()">
-            </button>
-            <button id="butt12" onclick="greeting()">
-            </button>
-            <button id="butt13" onclick="greeting()">
-            </button>
-            <button id="butt14" onclick="greeting()">
-            </button>
-            <button id="butt15" onclick="greeting()">
-            </button>
-            <button id="butt16" onclick="greeting()">
-            </button>
+            <button id="C4" class="butt" value="14" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="D4" class="butt" value="34" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="E4" class="butt" value="54" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="F4" class="butt" value="64" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="G4" class="butt" value="84" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="A4" class="butt" value="A4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="B4" class="butt" value="C4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="C5" class="butt" value="15" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="D5" class="butt" value="35" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="E5" class="butt" value="55" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="F5" class="butt" value="65" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="G5" class="butt" value="85" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="A5" class="butt" value="A5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="B5" class="butt" value="C5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="C6" class="butt" value="16" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="D6" class="butt" value="36" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Db4" value="24" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Eb4" value="44" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Gb4" value="74" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Ab4" value="94" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Bb4" value="B4" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Db5" value="25" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Eb5" value="45" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Gb5" value="75" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Ab5" value="95" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Bb5" value="B5" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
+            <button id="Db6" value="26" onmousedown="onPress(this.id)" onmouseup="onRelease(this.id)"></button>
         </div>
     <script src="bluetooth.js"></script>
     <script src="synthesizer.js"></script>
