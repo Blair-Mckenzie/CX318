@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f69486-20bc-4c98-a22a-2ce1206cec36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetooth.js" beforeDir="false" afterPath="$PROJECT_DIR$/bluetooth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthesizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/synthesizer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
       <updated>1582201743881</updated>
       <workItem from="1582201746272" duration="6056000" />
       <workItem from="1582736976439" duration="494000" />
+      <workItem from="1583935692375" duration="14000" />
     </task>
     <servers />
   </component>

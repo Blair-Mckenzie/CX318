@@ -92,64 +92,7 @@ document.addEventListener('keyup', function(event) {
         onRelease("B1");
 });
 
-//Assigns the frequency from note 1 to 88
-function createNoteTable() {
-let noteFreq =[];
-for (let i=1;i<89;i++){
-    noteFreq[i]=440*Math.pow(2,(i-49)/12);
-    console.log(noteFreq[i]);
-}
-return noteFreq;
-}
-
-//Creates the white key buttons and appends them to the DOM
-function createWhiteKeys(){
-    for(let i=0;i<10;i++){
-        whiteButtons[i]=document.createElement("button");
-        keyboard.appendChild(whiteButtons[i]);
-        whiteButtons[i].addEventListener("click",() => {
-            alert("Something Happened");
-        });
-    }
-}
-
-function createKeys(){
-    for(let i=0;i<88;i++){
-        buttons[i]=document.createElement("button");
-        keyboard.appendChild(buttons[i]);
-        buttons[i].addEventListener("click",() => {
-            alert("Something Happened");
-        });
-    }
-    for(let i=0;i<buttons.length;i++){
-        buttons[i].innerHTML = 'Key' + i;
-        buttons[i].style.width = '125px';
-        buttons[i].style.height = '300px';
-        buttons[i].style.backgroundColor='white';
-        //buttons[i+1].style.width = '62px';
-        buttons[i+1].style.zIndex ='1';
-        buttons[i+1].style.backgroundColor='black';
-        buttons[i+1].style.height = '150px';
-
-    }
-
-}
-
-function setBlackKeyProperties() {
-    for(let i=0;i<blackButtons.length;i++){
-        blackButtons[i].innerHTML='BKey'+i;
-        blackButtons[i].style.color="white";
-        blackButtons[i].style.width='62.5px';
-        blackButtons[i].style.height='150px';
-        blackButtons[i].style.backgroundColor='black';
-        blackButtons[i].style.borderColor='black';
-        blackButtons[i].style.position='relative';
-        blackButtons[i].style.zIndex="1";
-    }
-}
 
 function setup() {
-    setInterval(sendCurrentKeys, 100)
-    //createNoteTable();
-    //createKeys();
+    setInterval(sendCurrentKeys, 100);
 }
