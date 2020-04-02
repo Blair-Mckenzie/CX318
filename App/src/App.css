@@ -11,23 +11,24 @@ body, main, html, #buttons {
     height: 60%;
     background-color:white;
     border: none;
-    margin-right: -3.7px;
+    margin-right: -3.4px;
   }
 
   #buttons #Db4{
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: -78.1%;
+    left: -78.3%;
     position: relative;
     width: 4%;
+    border: 5px solid black;
   }
 
   #buttons #Eb4{
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: -77.1%;
+    left: -77.3%;
     position: relative;
     width: 4%;
   }
@@ -36,7 +37,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: -71.1%;
+    left: -71.3%;
     position: relative;
     width: 4%;
   }
@@ -45,7 +46,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: -70.1%;
+    left: -70.3%;
     position: relative;
     width: 4%;
   }
@@ -66,7 +67,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 34.4%;
+    left: 34.5%;
     position: relative;
     width: 4%;
     top: -60.7%;
@@ -76,7 +77,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 35.4%;
+    left: 35.5%;
     position: relative;
     width: 4%;
     top: -60.7%;
@@ -86,7 +87,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 41.4%;
+    left: 41.5%;
     position: relative;
     width: 4%;
     top: -60.7%;
@@ -96,7 +97,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 42.4%;
+    left: 42.5%;
     position: relative;
     width: 4%;
     top: -60.7%;
@@ -106,7 +107,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 43.4%;
+    left: 43.5%;
     position: relative;
     width: 4%;
     top: -60.7%;
@@ -116,7 +117,7 @@ body, main, html, #buttons {
     background-color: black;
     vertical-align: top;
     height: 40%;
-    left: 49.4%;
+    left: 49.67%;
     position: relative;
     width: 4%;
     top: -60.7%;
