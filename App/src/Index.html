@@ -4,17 +4,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="App.css">
         <title>Bluetooth Synthesizer</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
 
-    <div>
-        <button type="button" class="btn btn-primary" id="bluetooth">Bluetooth Connect</button>
+    <div class="modal fade" id="signInPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content form-elegant">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-4">
+                    <div class="md-form mb-5">
+                        <input type="email" id="Form-email1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                    </div>
+                    <div class="md-form pb-3">
+                        <input type="password" id="Form-pass1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+                            Password?</a></p>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                    </div>
+                </div>
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+                        Sign Up</a></p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#" id="bluetooth">Bluetooth Connect <i class="fa fa-bluetooth-b"></i> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signInPopup">Sign In/Sign Up <i class="fa fa-fw fa-user"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings <i class="fa fa-fw fa-cog"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Still to workout the ids and values of the additional buttons this is just to make the simple layout again -->
 

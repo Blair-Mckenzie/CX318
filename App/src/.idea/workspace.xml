@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f69486-20bc-4c98-a22a-2ce1206cec36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetooth.js" beforeDir="false" afterPath="$PROJECT_DIR$/bluetooth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/synthesizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/synthesizer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +37,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/University/Third Year/BostonMetro" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/University/Third Year/Portfolio/cs308-assignment2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +61,8 @@
       <workItem from="1582201746272" duration="6056000" />
       <workItem from="1582736976439" duration="494000" />
       <workItem from="1583935692375" duration="14000" />
+      <workItem from="1585743064696" duration="2500000" />
+      <workItem from="1587555303432" duration="6775000" />
     </task>
     <servers />
   </component>
@@ -59,18 +70,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="272" y="42" key="#Deployment" timestamp="1583497269786">
-      <screen x="0" y="0" width="1360" height="768" />
+    <state x="273" y="42" key="#Deployment" timestamp="1587555440283">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="272" y="42" key="#Deployment/0.0.1360.768@0.0.1360.768" timestamp="1583497269786" />
-    <state x="273" y="42" key="#Deployment/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1583074359600" />
+    <state x="273" y="42" key="#Deployment/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1587555440283" />
     <state x="92" y="92" width="1182" height="584" key="DiffContextDialog" timestamp="1582650823333">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1582650823333" />
-    <state x="460" y="138" key="FileChooserDialogImpl" timestamp="1583418926402">
+    <state x="460" y="138" key="FileChooserDialogImpl" timestamp="1586384555754">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state x="460" y="138" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1583418926402" />
+    <state x="460" y="138" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1586384555754" />
   </component>
 </project>

@@ -2,7 +2,6 @@ const serviceID="dd8c1400-3ae2-5c42-b8be-96721cd710fe";
 const characteristicID ="dd8c1401-3ae2-5c42-b8be-96721cd710fe";
 let button=document.getElementById('bluetooth');
 let customChar;
-let customChar2;
 
 button.addEventListener("click",() => {
     navigator.bluetooth.requestDevice({
